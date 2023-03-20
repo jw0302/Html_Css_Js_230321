@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  display: inline-block;
+  /* margin은 box-sizing이 안 먹기때문에 보통 padding으로 간격조정 */
+  margin: 10px 10px;
+  padding: 10px;
+
+  text-align: center;
+  line-height: 50px;
+
+  cursor: pointer;
+}

@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+/* ::after 특정 요소의 뒤에 지정한 콘텐츠 추가 */
+input[type=checkbox] + label::after{
+  content: "";
+  display: flex;
+  justify-content: center;
+  border: 1px solid #dbdbdb;
+  border-radius: 50%;           /* 블럭을 원으로 바꿀때 */
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 39px;
+  color: white;
+}
+
+/* :checked 라디오 버튼이나 체크 박스에 체크했을 때 스타일 적용 */
+input[type=checkbox]:checked + label::after {
+  content: "●";
+  color: #ff4a4a;
+}
+
+input[type=checkbox] + label:nth-child(6)::after {
+  border: 1px solid red;
+}

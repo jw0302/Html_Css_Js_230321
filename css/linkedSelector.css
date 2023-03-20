@@ -1,0 +1,19 @@
+/* 가장 기본적인 하위 선택자 main -> article -> section -> label */
+main article section label {
+  color: blue;
+}
+
+/* 자식선택자 : 두 요소 사이에 ‘>(부등호)’를 표시해 부모 요소와 자식 요소를 구분 */
+main article section > input {
+  border: 3px solid red;
+}
+
+/* 인접 형제 선택자 : 같은 부모를 가진 형제 요소 중 첫 번째 동생 요소에만 스타일 적용 */
+main article section h1 + label {
+  color: brown;
+}
+
+/* 형제 선택자 : 인접 형제 선택자와 다른 점은 모든 형제 요소에 다 적용된다는 것 */
+main article div h2 ~ label {
+  color: pink;
+}

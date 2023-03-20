@@ -1,0 +1,9 @@
+/* 요소와 숫자의 위치가 같아야 한다 */
+h1:nth-child(1) {
+  color: red;
+}
+
+/* h1에서만 순서를 본다 */
+h2:nth-of-type(2) {
+  color: blue;
+}

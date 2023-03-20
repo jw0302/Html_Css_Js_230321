@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
+/* 기본적으로 flex에서 자식 box이동시 부모 class에서 바꿔줘야 이동한다 */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;                          /* 끝에 부딪쳤을때 다음칸으로 보내준다 */
+  justify-content: flex-start;              /* 중간이 아닌 양쪽에 붙이고 싶을때 */
+  align-items: center;                      /* box안에 flex 중간에 나두기 */
+  width: 1000px;
+  height: 600px;
+}
+
+.box {
+  margin: 10px;
+  width: 300px;
+  height: 50px;
+  background-color: black;
+}

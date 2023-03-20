@@ -1,0 +1,16 @@
+/* [속성]선택자 : 지정한 속성을 가진 요소를 찾아 스타일 적용 */
+input[type] {
+  border: 3px solid red;
+}
+
+/* [속성 = 값]선택자 : 주어진 속성과 속성 값이 일치하는 요소를 찾아 스타일 적용 */
+input[type=password] {
+  border: 3px solid blue;
+}
+
+/* [속성 ~= 값] : 여러 속성 값 중에 해당 값이 포함되어 있는 요소를 찾아 스타일 적용 */
+/* [속성 |= 값] : 하이픈으로 연결해 한 단어 값을 이루는 요소에도 적용 */
+input[class |= text] {
+  background-color: black;
+  color: white;
+}

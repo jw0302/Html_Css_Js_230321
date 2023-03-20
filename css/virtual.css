@@ -1,0 +1,45 @@
+/* 사용자 동작에 반응하는 가상 클래스 선택자 */
+
+.username-input {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #dbdbdb;
+  height: 30px;
+}
+
+/* :active 웹 요소를 활성화했을 때의 스타일 적용 */
+.username-input:active {
+  background-color: #fafafa;
+}
+
+/* :focus 웹 요소에 초점이 맞추어졌을 때의 스타일 적용 */
+.username-input:focus {
+  border-bottom: 2px solid #121212;
+}
+
+/* :disabled 요소의 사용 여부에 따라 스타일 적용 */
+.username-input:disabled {
+  background-color: #dbdbdb;
+}
+
+.ok-btn {
+  border: 1px solid #dbdbdb;
+  width:  50px;
+  height: 30px;
+  background-color: #fafafa;
+}
+
+/* :hover 웹 요소에 마우스 커서를 올려놓을 때의 스타일 적용 */
+.ok-btn:not(:disabled):hover {
+  border-color: white;
+  background-color: #dbdbdb;
+}
+
+/* :not() 특정 요소를 제외하고 스타일 적용 */
+.ok-btn:not(:disabled):active {
+  background-color: #eee;
+}
+
+.ok-btn:disabled {
+  background-color: rgb(255, 118, 118);
+}
